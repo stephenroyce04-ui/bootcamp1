@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Example</title>
+  <style>
+    /* Makes the image scale down but never grow bigger than its original size */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* removes small gaps under the image */
+      margin: 0 auto; /* centers the image */
+    }
+
+    /* Optional: style the container */
+    .image-container {
+      max-width: 800px;  /* limit maximum width */
+      margin: 20px auto;
+      border: 2px solid #ddd;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <h2>Responsive Photo</h2>
+    <img src="your-photo.jpg" alt="Example photo">
+    <p>The image above will automatically resize to fit smaller screens.</p>
+  </div>
+</body>
+</html>
